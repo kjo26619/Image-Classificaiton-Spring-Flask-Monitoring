@@ -91,11 +91,11 @@ Datasource로 들어가서 Prometheus를 추가한다.
 
 Prometheus는 Docker compose를 지정할 때 사용했던 Container 이름을 지정하면 Docker DNS로 연결할 수 있다.
 
-![image4](https://github.com/kjo26619/Image-Classification-Spring-Flask/blob/main/img/grafana3.png)
+![image4](https://github.com/kjo26619/Image-Classification-Spring-Flask/blob/main/img/grafana3.PNG)
 
 [Save & Test] 를 눌러서 Data source is working이 나오면 된다.
 
-![image5](https://github.com/kjo26619/Image-Classification-Spring-Flask/blob/main/img/grafana4.png)
+![image5](https://github.com/kjo26619/Image-Classification-Spring-Flask/blob/main/img/grafana4.PNG)
 
 localhost:8082에 접속하여 이미지를 업로드하면 Classification 되면서 Request가 증가한다.
 
