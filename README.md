@@ -8,7 +8,7 @@ plus, add monitoring tools (Prometheus + Grafana)
 
 # Architecture
 
-![imageArch]()
+![imageArch](https://github.com/kjo26619/Image-Classification-Spring-Flask/blob/main/img/arch.png)
 
 기존 구조에서 Container로 Prometheus와 Grafana가 추가된다.
 
@@ -30,7 +30,7 @@ metrics = PrometheusMetrics(app)
 
 로컬로 확인한다면 localhost:5000/metrics로 들어가면 결과가 반환되는 것을 확인해볼 수 있다.
 
-![image1]()
+![image1](https://github.com/kjo26619/Image-Classification-Spring-Flask/blob/main/img/flask.PNG)
 
 # Prometheus + Grafana
 
@@ -83,19 +83,19 @@ Docker Compose를 이용할 때 Prometheus와 Grafana가 같이 시작되도록 
 
 Docker Compose가 완료되면 localhost:8083으로 접속하면 Grafana Dashboard와 연결할 수 있다.
 
-![image2]()
+![image2](https://github.com/kjo26619/Image-Classification-Spring-Flask/blob/main/img/grafana1.png)
 
 Datasource로 들어가서 Prometheus를 추가한다.
 
-![image3]()
+![image3](https://github.com/kjo26619/Image-Classification-Spring-Flask/blob/main/img/grafana2.png)
 
 Prometheus는 Docker compose를 지정할 때 사용했던 Container 이름을 지정하면 Docker DNS로 연결할 수 있다.
 
-![image4]()
+![image4](https://github.com/kjo26619/Image-Classification-Spring-Flask/blob/main/img/grafana3.png)
 
 [Save & Test] 를 눌러서 Data source is working이 나오면 된다.
 
-![image5]()
+![image5](https://github.com/kjo26619/Image-Classification-Spring-Flask/blob/main/img/grafana4.png)
 
 localhost:8082에 접속하여 이미지를 업로드하면 Classification 되면서 Request가 증가한다.
 
