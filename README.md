@@ -87,7 +87,7 @@ Docker Compose가 완료되면 localhost:8083으로 접속하면 Grafana Dashboa
 
 Datasource로 들어가서 Prometheus를 추가한다.
 
-![image3](https://github.com/kjo26619/Image-Classification-Spring-Flask/blob/main/img/grafana2.png)
+![image3](https://github.com/kjo26619/Image-Classification-Spring-Flask/blob/main/img/grafana2.PNG)
 
 Prometheus는 Docker compose를 지정할 때 사용했던 Container 이름을 지정하면 Docker DNS로 연결할 수 있다.
 
