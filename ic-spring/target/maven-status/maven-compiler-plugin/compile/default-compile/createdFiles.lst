@@ -1,0 +1,9 @@
+com/classification/image/docker/web/config/MvcConfig.class
+com/classification/image/docker/web/controller/ImageClassificationController.class
+com/classification/image/docker/web/controller/HomeController.class
+com/classification/image/docker/web/error/EntityEmptyException.class
+com/classification/image/docker/web/service/ImageClassificationService.class
+com/classification/image/docker/web/ImageClassificationWebApplication.class
+com/classification/image/docker/web/error/CustomExceptionHandler.class
+com/classification/image/docker/web/error/WrongExtensionException.class
+com/classification/image/docker/web/controller/CustomErrorController.class

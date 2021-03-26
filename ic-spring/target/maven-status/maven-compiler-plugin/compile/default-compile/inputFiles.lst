@@ -1,0 +1,9 @@
+/home/windows/ImageClassification/src/main/java/com/classification/image/docker/web/error/EntityEmptyException.java
+/home/windows/ImageClassification/src/main/java/com/classification/image/docker/web/controller/ImageClassificationController.java
+/home/windows/ImageClassification/src/main/java/com/classification/image/docker/web/error/CustomExceptionHandler.java
+/home/windows/ImageClassification/src/main/java/com/classification/image/docker/web/ImageClassificationWebApplication.java
+/home/windows/ImageClassification/src/main/java/com/classification/image/docker/web/error/WrongExtensionException.java
+/home/windows/ImageClassification/src/main/java/com/classification/image/docker/web/controller/CustomErrorController.java
+/home/windows/ImageClassification/src/main/java/com/classification/image/docker/web/controller/HomeController.java
+/home/windows/ImageClassification/src/main/java/com/classification/image/docker/web/config/MvcConfig.java
+/home/windows/ImageClassification/src/main/java/com/classification/image/docker/web/service/ImageClassificationService.java

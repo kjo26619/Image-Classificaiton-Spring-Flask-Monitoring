@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.classification.image.docker.web.ImageClassificationWebApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.657 s - in com.classification.image.docker.web.ImageClassificationWebApplicationTests
