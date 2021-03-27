@@ -1,0 +1,50 @@
+version: "3"
+services:
+  ic_flask_api:
+    build:
+      context: ./ic-flask
+      dockerfile: Dockerfile
+    networks:
+      - ic_network
+  
+  ic_spring_web:
+    build:
+      context: ./ic-spring
+      dockerfile: Dockerfile
+    ports:
+      - 8082:8082
+    depends_on:
+      - ic_flask_api
+    networks:
+      - ic_network
+      - default
+
+  ic_prometheus:
+    image: prom/prometheus
+    ports:
+      - 9090:9090
+    volumes:
+      - ./monitoring/prometheus.yaml:/etc/prometheus/prometheus.yaml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yaml'
+    networks:
+      - ic_network
+  
+  ic_grafana:
+    image: grafana/grafana
+    ports: 
+      - 8083:3000
+    networks:
+      - ic_network
+      - default
+    volumes:
+      - ./monitoring/datasource.yaml:/etc/grafana/provisioning/datasource.yaml
+    env_file:
+      - ./monitoring/config.monitoring
+    depends_on:
+      - ic_flask_api
+      - ic_prometheus
+
+networks:
+  ic_network:
+    driver: bridge
